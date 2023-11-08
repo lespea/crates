@@ -16,3 +16,6 @@ upd:
 tidy:
     go mod verify
     go mod tidy
+
+run:
+    go run bin/run.go

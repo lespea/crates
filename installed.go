@@ -2,9 +2,10 @@ package crates
 
 import (
 	"fmt"
-	"github.com/hashicorp/go-version"
 	"net/url"
 	"regexp"
+
+	"github.com/hashicorp/go-version"
 )
 
 type InstalledInfo struct {
