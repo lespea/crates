@@ -22,7 +22,7 @@ type CrateInfo struct {
 	Name          string
 	Vers          string
 	ParsedVersion *version.Version
-	Checksum      string
+	Cksum         string
 	Deps          []Dep
 	Features      map[string][]string
 	Yanked        bool
@@ -40,7 +40,7 @@ func (ci *CrateInfo) ParseVerStr() {
 	}
 }
 
-type CrateInfos []CrateInfo
+type CrateInfos []*CrateInfo
 
 func (cis CrateInfos) ParseVerStrs() {
 	for _, ci := range cis {
@@ -49,7 +49,7 @@ func (cis CrateInfos) ParseVerStrs() {
 }
 
 func CrateUrl(crate string) *url.URL {
-	u, err := url.Parse(`https://index.crates.io`)
+	u, err := url.Parse(`https://index.crates.io/`)
 	if err != nil {
 		panic(err)
 	}
