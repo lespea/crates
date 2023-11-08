@@ -1,10 +1,11 @@
 package crates
 
 import (
-	"github.com/hashicorp/go-version"
 	"net/url"
 	"reflect"
 	"testing"
+
+	"github.com/hashicorp/go-version"
 )
 
 func Test_parseInstallName(t *testing.T) {

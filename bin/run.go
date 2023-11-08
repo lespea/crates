@@ -4,8 +4,9 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	"github.com/lespea/crates"
 	"os"
+
+	"github.com/lespea/crates"
 )
 
 func e(err error) {
